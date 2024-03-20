@@ -35,7 +35,7 @@ with open("agenda.txt", "r") as archivo:
             print(f"{i}.- {opcion}")
         
         opcion = int(input("Teclea el numero con de la opcion a editar: "))
-        
+
         if opcion == 1:
             print(registros[seleccion - 1]['Nombre'])
             nuevo_nombre = input("Que nuevo nombre le quieres asignar?: ")
@@ -55,21 +55,20 @@ with open("agenda.txt", "r") as archivo:
         # print(f"{registros[seleccion - 1]}")
         # campo_a_editar = input
 
+
 with open("agenda.txt", "w") as archivo:
     for registro in registros:
-        print(registro)
-# with open("agenda.txt", "w") as archivo:
-#     for registro in registros:
-#         linea_items = []
-#         for key, value in registro.items():
-#             linea_items.append(f"{key}: {value}")
-        
-#         linea = ", ".join(linea_items)
-#         archivo.write(linea + "\n")
-    
-# print("Los cambios han sido guardados en el archivo.")    
-        
+        # print(registro)
+        linea_items = []
+        for key, value in registro.items():
+            linea_items.append(f"{key}: {value}")
+            
+        # print(linea_items)
+        linea = ', '.join(linea_items)
+        # print(linea)
+        archivo.write(linea + "\n")
 
+print("Los cambios han sido guardados en el archivo.")          
 
 
 
