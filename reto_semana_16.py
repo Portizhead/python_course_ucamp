@@ -22,7 +22,7 @@ while True:
 
 
 # api_key = input("Ingresa tu API Key de OpenWeather: ")
-api_key = "93a7afb7087c5a5cc631d3c9c6f9ca8c"
+
 
 url = f"https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&appid={api_key}"
 
@@ -34,7 +34,7 @@ if respuesta.status_code != 200:
     
     
 
-# api_key = input("Introduce tu API key de OpenWeather")#93a7afb7087c5a5cc631d3c9c6f9ca8c
+# api_key = input("Introduce tu API key de OpenWeather")#
 
 
 
